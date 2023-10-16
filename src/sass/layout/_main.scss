@@ -61,7 +61,7 @@ main {
                 }
             }
 
-            .projectP {
+            .prestation {
                 @include respondTo(md) {
                     margin: 0 8rem;
                 }
@@ -388,21 +388,63 @@ main {
                 }
             }
         }
+
+    }
+
+    #specsMainContainer {
+        border-bottom: solid #333 2px;
+        border-top: solid #333 2px;
+        background-color: #888;
+        width: 100%;
+        display: flex;
+        color: #eee;
+        padding: 1rem 0;
+
+        .specsContainers {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1rem 0;
+            padding: 0 4rem;
+
+            img {
+                width: 36px;
+            }
+        }
     }
     
-    #projectsSection {
+    #prestationSection {
         background-color: #ffffff;
         
-        #projectsSectionMainContainer {
+        #prestationSectionMainContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             @include respondTo(md) {
                 display: grid;
+                justify-items: center;
                 grid-template-columns: 1fr 1fr;
                 gap: 0 2rem;
             }
 
-            .projectsMainContainers {
+            .prestationMainContainers {
                 position: relative;
                 margin-bottom: 4rem;
+                text-align: center;
+                background-color: #333;
+                width: 200px;
+                border-radius: 0.5rem;
+
+                @include respondTo(sm) {
+                    width: 300px;
+                }
+
+                @include respondTo(md) {
+                    width: 350px;
+                }
 
                 &::after {
                     content: "";
@@ -418,46 +460,46 @@ main {
                         display: none;
                     }
                 }
+                    
+                img {
+                    display: block;
+                    box-sizing: border-box;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                    opacity: 0.3;
+                    width: 200px;
+                    border: #333 solid 4px ;
+                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 
-                .projectsContainers {
-                    margin-top: 1.5rem;
-                    text-align: center;
-                
-                    img {
-                        border: #333 solid 4px ;
-                        border-radius: 0.5rem;
-                        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-                        width: 75%;
-
-                        @include respondTo(md) {
-                            width: 50%;
-                        }
+                    &:hover {
+                        opacity: 1;
                     }
 
-                    h4 {
-                        text-transform: uppercase;
+                    @include respondTo(sm) {
+                        width: 300px;
+                    }
+                    
+                    @include respondTo(md) {
+                        width: 350px;
+                    }
+                }
 
-                        @include respondTo(sm) {
-                            font-size: 1.25rem;
-                        }
+                h4 {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    right: 0;
+                    color: #eee;
+                    text-transform: uppercase;
+                    z-index: 100;
 
-                        @include respondTo(lg) {
-                            font-size: 1.35rem;
-                        }
+                    @include respondTo(sm) {
+                        font-size: 1.25rem;
                     }
 
-                    .projectsDescription {
-                        @include respondTo(sm) {
-                            font-size: 1.15rem;
-                        }
-
-                        @include respondTo(lg) {
-                            font-size: 1.25rem;
-                        }
-
-                        strong {
-                            color: #0671C4;
-                        }
+                    @include respondTo(lg) {
+                        font-size: 1.35rem;
                     }
                 }
             }
@@ -498,12 +540,12 @@ main {
                 margin: 4rem auto;
                 border-radius: 0.5rem;
 
-                .projectsGalleryMainsContainers.right {
-                    .projectsGalleryTitles {
+                .prestationGalleryMainsContainers.right {
+                    .prestationGalleryTitles {
                         left: 2rem;
                     }
         
-                    .projectsGalleryContainers {
+                    .prestationGalleryContainers {
                         img {
                             grid-column: 2;
                             grid-row: 1;
@@ -515,19 +557,19 @@ main {
                             border-bottom-right-radius: 0.5rem;
                         }
                         
-                        .projectsGalleryCtaDescriptionContainer {
+                        .prestationGalleryCtaDescriptionContainer {
                             grid-column: 1;
                             grid-row: 1;
                         }
                     }
                 }
         
-                .projectsGalleryMainsContainers.left {
-                    .projectsGalleryTitles {
+                .prestationGalleryMainsContainers.left {
+                    .prestationGalleryTitles {
                         right: 2rem;
                     }
         
-                    .projectsGalleryContainers {
+                    .prestationGalleryContainers {
                         img {
                             grid-column: 1;
                             grid-row: 1;
@@ -537,7 +579,7 @@ main {
                             border-bottom-left-radius: 0.5rem;
                         }
                         
-                        .projectsGalleryCtaDescriptionContainer {
+                        .prestationGalleryCtaDescriptionContainer {
                             grid-column: 2;
                             grid-row: 1;
                         }
@@ -545,7 +587,7 @@ main {
                 }
             }
     
-            .projectsGalleryMainsContainers {
+            .prestationGalleryMainsContainers {
                 position: relative;
     
                 &:not(:last-child)::after {
@@ -563,7 +605,7 @@ main {
                     }
                 }
     
-                .projectsGalleryTitles {
+                .prestationGalleryTitles {
                     margin-bottom: 0.75rem;
                     font-size: 1.25rem;
     
@@ -574,7 +616,7 @@ main {
                     }
                 }
     
-                .projectsGalleryContainers {
+                .prestationGalleryContainers {
                     display: flex;
                     flex-direction: column;
                     gap: 1rem 0;
@@ -589,7 +631,7 @@ main {
                         align-items: center;
                     }
         
-                    .projectsGalleryImgs {
+                    .prestationGalleryImgs {
                         border-top-right-radius: 0.5rem;
                         border-top-left-radius: 0.5rem;
                         object-fit: cover;
@@ -601,12 +643,12 @@ main {
                         }
                     }
                     
-                    .projectsGalleryCtaDescriptionContainer {
+                    .prestationGalleryCtaDescriptionContainer {
                         display: flex;
                         flex-direction: column;
                         gap: 2rem 0;
 
-                        .projectsGalleryDescriptions {
+                        .prestationGalleryDescriptions {
                             margin-bottom: 1rem;
                             
                             @include respondTo(md) {
@@ -620,7 +662,7 @@ main {
                             }
                         }
 
-                        .projectsGalleryCta {
+                        .prestationGalleryCta {
                             color: white;
                             text-decoration: none;
                             background-color: #0671C4;

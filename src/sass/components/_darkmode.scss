@@ -136,7 +136,7 @@
 
         }
 
-        #projectsSection {
+        #prestationSection {
             background-color: #444;
         }
 
@@ -182,16 +182,16 @@
                 color: mediumspringgreen;
             }
 
-            .projectsGalleryMainsContainers {
+            .prestationGalleryMainsContainers {
                 h2 {
                     color:mediumspringgreen;
                 }
 
-                .projectsGalleryContainers {
+                .prestationGalleryContainers {
                     background-color: #333;
                     border: solid #666 2px;
 
-                    .projectsGalleryImgs {
+                    .prestationGalleryImgs {
                         border-bottom: solid #666 2px;
 
                         @include respondTo(md) {
@@ -199,10 +199,10 @@
                         }
                     }
 
-                    .projectsGalleryCtaDescriptionContainer {
+                    .prestationGalleryCtaDescriptionContainer {
                         color: white;
                         
-                        .projectsGalleryCta {
+                        .prestationGalleryCta {
                             background-color: mediumspringgreen !important;
                             color: #333 !important;
 
@@ -214,13 +214,13 @@
 
                 @include respondTo(md) {
                     &.right {
-                        .projectsGalleryImgs {
+                        .prestationGalleryImgs {
                             border-left: solid #666 2px;
                         }
                     }
     
                     &.left {
-                        .projectsGalleryImgs {
+                        .prestationGalleryImgs {
                             border-right: solid #666 2px;
                         }
                     }
