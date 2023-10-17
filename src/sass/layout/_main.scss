@@ -205,12 +205,12 @@ main {
                         @include respondTo(md) {
                             display: block;
                             position: absolute;
-                            width: 124px;
+                            width: 258px;
                             right: 20%;
                             bottom: 50%;
                             transform: translateY(50%);
                             z-index: -1;
-                            opacity: 0.2;
+                            opacity: 0.4;
                         }
                     }
                 }
@@ -397,8 +397,13 @@ main {
         background-color: #888;
         width: 100%;
         display: flex;
+        flex-direction: column;
         color: #eee;
         padding: 1rem 0;
+
+        @include respondTo(md) {
+            flex-direction: row;
+        }
 
         .specsContainers {
             display: flex;
@@ -512,6 +517,27 @@ main {
         #contactFormContainer {
             margin: 0 auto;
             border: solid 2px black;            
+        }
+
+        #contactSectionMainContainer {
+            border: solid #333 2px;
+            border-radius: 0.5rem;
+            margin: 0 auto;
+            width: fit-content;
+            padding: 0.5rem;
+
+            #contactSectionSocialIconsContainer {
+                display: flex;
+                gap: 0 2rem;
+
+                li {
+                    a {
+                        img {
+                            width: 36px;
+                        }
+                    }
+                }
+            }
         }
     }
 
