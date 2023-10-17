@@ -1,6 +1,8 @@
-#map {
-    height: 300px;      /*to show the map, she must have a height*/
-    border-top: #333 solid;
-    border-bottom: white solid;
-    z-index: -3;
+#mapContainer {
+    #map {
+        height: 300px;      /*Pour afficher la map, elle a besoin d'une hauteur */
+        border-top: #333 solid;
+        border-bottom: white solid;
+        z-index: 1;
+    }
 }
