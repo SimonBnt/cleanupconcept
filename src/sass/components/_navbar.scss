@@ -72,7 +72,9 @@
                     width: 32px;
 
                     @include respondTo(md) {
-                        display: none;
+                        &:not(#returnIcon) {
+                            display: none;
+                        }
                     }
                 }
             }
