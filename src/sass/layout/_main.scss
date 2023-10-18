@@ -133,6 +133,7 @@ main {
                         h2 {
                             color: #0671C4;
                             font-size: 1.25rem;
+                            text-transform: uppercase;
                         }
 
                         p {
@@ -179,7 +180,7 @@ main {
                 h1 {
                     color: #0671C4;
                     text-transform: uppercase;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     text-align: center;
                     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                     letter-spacing: 0.25rem;
@@ -188,15 +189,15 @@ main {
                     margin: 0 auto;
 
                     @include respondTo(sm) {
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                     }
     
                     @include respondTo(md) {
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                     }
 
                     @include respondTo(lg) {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
 
                     #titleImg {
@@ -309,6 +310,10 @@ main {
                     }
 
                     &::after {
+                        @media screen and (min-width: 0px) and (max-width: 379px) {
+                            display: none;
+                        }
+
                         content: "";
                         width: 20px;
                         height: 2px;
@@ -323,6 +328,10 @@ main {
                     }
                     
                     &::before {
+                        @media screen and (min-width: 0px) and (max-width: 379px) {
+                            display: none;
+                        }
+
                         content: "";
                         width: 20px;
                         height: 2px;
@@ -489,19 +498,26 @@ main {
                     border-radius: 0.5rem;
                     opacity: 0.3;
                     width: 200px;
-                    border: #333 solid 4px ;
+                    max-height: 300px;
+                    border: #333 solid 2px ;
                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+                    transition: 0.3s;
 
-                    &:hover {
-                        opacity: 1;
-                    }
-
+                    
                     @include respondTo(sm) {
                         width: 300px;
                     }
                     
                     @include respondTo(md) {
                         width: 350px;
+                        height: 350px;
+
+                        &:hover {
+                            opacity: 1;
+                            transform: scale(1.025);
+                            border: #0671C4 solid 2px;
+                            transition: 0.3s;
+                        }
                     }
                 }
 
@@ -616,7 +632,12 @@ main {
             display: flex;
             flex-direction: column;
             gap: 4rem 0;
-    
+
+            .prestationGalleryMainsContainers {
+                .prestationGalleryTitles {
+                    text-transform: uppercase;
+                }
+            }
             @include respondTo(md) {
                 width: 90%;
                 margin: 4rem auto;
@@ -625,6 +646,11 @@ main {
                 .prestationGalleryMainsContainers.right {
                     .prestationGalleryTitles {
                         left: 2rem;
+                        border-right: solid #333 2px;
+                        border-bottom: solid #333 2px;
+                        border-bottom-right-radius: 0.5rem;
+                        padding: 0.5rem;
+                        box-shadow: 5px 5px 0px -2px rgba(0, 0, 0, 0.2);
                     }
         
                     .prestationGalleryContainers {
@@ -649,6 +675,11 @@ main {
                 .prestationGalleryMainsContainers.left {
                     .prestationGalleryTitles {
                         right: 2rem;
+                        border-left: solid #333 2px;
+                        border-bottom: solid #333 2px;
+                        border-bottom-left-radius: 0.5rem;
+                        padding: 0.5rem;
+                        box-shadow: -5px 5px 0px -2px rgba(0, 0, 0, 0.2);
                     }
         
                     .prestationGalleryContainers {
@@ -718,10 +749,13 @@ main {
                         border-top-left-radius: 0.5rem;
                         object-fit: cover;
                         display: block;    
-
+                        max-height: 300px;
+                        
                         @include respondTo(md) {
                             border-top-right-radius: 0;
                             border-top-left-radius: 0;
+                            max-height: 400px;
+                            max-width: 400px;
                         }
                     }
                     
@@ -737,6 +771,7 @@ main {
                                 font-size: 1.75rem;
                                 line-height: 3rem;
                                 margin: 0 20%;
+                                margin-top: 4rem;
                             }
     
                             strong {

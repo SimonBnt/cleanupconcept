@@ -50,10 +50,14 @@ header {
                 padding: 0 0.5rem 0.5rem 0;
                 border-bottom-right-radius: 0.5rem;
                 font-size: 0.9rem;
+                line-height: 0.75rem;
                 
-                @include respondTo(md) {
+                @media screen and (min-width: 0px) and (max-width: 359px) {
+                    font-size: 0.75rem;
+                }
+                
+                @include respondTo(sm) {
                     font-size: 1rem;
-                    padding: 0 0.75rem 0.75rem 0;
                 }
             }
 
