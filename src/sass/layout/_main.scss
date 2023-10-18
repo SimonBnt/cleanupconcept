@@ -157,9 +157,16 @@ main {
                             gap: 0 1rem;
                             width: fit-content;
                             margin: 0 auto;
+                            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+                            transition: 0.3s;
 
                             @include respondTo(md) {
                                 margin: inherit;
+
+                                &:hover {
+                                    transform: translateY(-2px);
+                                    transition: 0.3s;
+                                }
                             }
                     
                             #homeCtaImg {
@@ -187,6 +194,10 @@ main {
                     position: relative;
                     width: fit-content;
                     margin: 0 auto;
+                    border: solid 2px;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    background-color: white;
 
                     @include respondTo(sm) {
                         font-size: 1.5rem;
@@ -194,6 +205,8 @@ main {
     
                     @include respondTo(md) {
                         font-size: 2rem;
+                        padding: 0.75rem;
+                        border: solid 4px;
                     }
 
                     @include respondTo(lg) {
@@ -280,6 +293,18 @@ main {
     #aboutSection {
         background-color: #f8f8f8;
 
+        #aboutSectionTopContainer {
+            #presentationVideoContainer {
+                border: solid 2px black;
+                width: 300px;
+                height: 300px;
+                border-radius: 0.5rem;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+                margin: 0 auto;
+                margin-top: 2rem;
+            }
+        }
+
         #aboutSectionMainContainer {
             @include respondTo(md) {
                 display: grid;
@@ -345,23 +370,30 @@ main {
                         }
                     }
                 }
-            }
 
-            .bioP {
-                margin-top: 2rem;
-            }
-
-            p {
-                @include respondTo(sm) {
-                    font-size: 1.15rem;
+                .bioP {
+                    margin-top: 1rem;
+                }
+    
+                p {
+                    @include respondTo(sm) {
+                        font-size: 1.15rem;
+                    }
+    
+                    strong {
+                        color: #0671C4;
+                    }
                 }
 
-                @include respondTo(md) {
-                    font-size: 1.25rem;
-                }
+                h4 {
+                    text-transform: uppercase;
+                    margin-top: 2rem;
+                    color: black;
+                    font-size: 0.9rem;
 
-                strong {
-                    color: #0671C4;
+                    @include respondTo(md) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -502,7 +534,6 @@ main {
                     border: #333 solid 2px ;
                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
                     transition: 0.3s;
-
                     
                     @include respondTo(sm) {
                         width: 300px;
