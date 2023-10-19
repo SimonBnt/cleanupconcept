@@ -5,26 +5,28 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: #333;
+    background-color: #222;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     color: #0671C4;
+    border-bottom: #333 2px solid;
     
     #headerMainContentContainer {
         padding: 1rem 1rem;
         display: flex;
         align-items: center;
+        position: relative;
 
         @include respondTo(md) {
             padding: 0.25rem 1rem;
         }
 
-        #logo-colorModeContainer {
+        #logoContainer {
             display: flex;
             align-items: center;
             gap: 0 1rem;
-            width: 100%;
-
+            
             @include respondTo(md) {
+                width: 100%;
                 margin-left: 4rem;
             }
 
@@ -49,54 +51,36 @@ header {
                 box-shadow: 5px 5px 0px 0px rgba(0,0,0,.15);
                 padding: 0 0.5rem 0.5rem 0;
                 border-bottom-right-radius: 0.5rem;
-                font-size: 0.9rem;
                 line-height: 0.75rem;
-                
+                font-size: 0.75rem;
+
                 @media screen and (min-width: 0px) and (max-width: 359px) {
-                    font-size: 0.75rem;
+                    font-size: 0.5rem;
                 }
                 
                 @include respondTo(sm) {
+                    font-size: 0.85rem;
+                }
+
+                @include respondTo(md) {
                     font-size: 1rem;
                 }
-            }
 
-            #colorModeContainer {
-                display: flex;
-                gap: 0 1rem;
-                margin-left: 1rem;
-                
-                @include respondTo(md) {
-                    margin-left: 2rem;
+                strong {
+                    color: white;
                 }
 
-                
-                .colorModeBtns {
-                    .colorModeBtnImg {
-                        width: 32px;
-                        height: 32px;
-                        transition: 0.3s;
-
-                        &:hover {
-                            cursor: pointer;
-                            transition: 0.3s;
-                            transform: translateY(-2px);
-                        }
-                    }
-                }
-
-                #darkModeBtn.noActive {
-                    display: none;
-                }
-
-                #lightModeBtn.noActive {
-                    display: none;
+                #detailing {
+                    color: white;
                 }
             }
         }
     
         #burgerMenuMainContainer {
             text-align: right;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
 
             @include respondTo(md) {
                 display: none;
@@ -105,8 +89,15 @@ header {
             .burgerMenuImgContainer {
                 img {
                     width: 32px;
+                    margin-left: 2rem;
+
+                    @include respondTo(sm) {
+                        width: 48px;
+                    }
 
                     @include respondTo(md) {
+                        margin-left: 0;
+
                         &:hover {
                             cursor: pointer;
                         }
@@ -129,8 +120,6 @@ header {
             display: flex;
             flex-direction: column;
             gap: 1rem 0;
-            align-items: center;
-            justify-content: right;
             
             li {
                 text-align: right;
@@ -141,6 +130,7 @@ header {
                 a {
                     text-decoration: none;
                     color: white;
+                    font-size: 0.75rem;
                     transition: 0.3s;
 
                     @include respondTo(md) {

@@ -1,8 +1,8 @@
-// Coordonées de Limoges
-let limoges = { "lat": 45.836, "lon": 1.264 };
+// Coordonées
+let adress = { "lat": 45.896, "lon": 1.051 };
 
 // Créer la map Leaflet
-let map = L.map('map').setView([limoges.lat, limoges.lon], 13);
+let map = L.map('map').setView([adress.lat, adress.lon], 13);
 
 // Ajout des tuiles OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -11,8 +11,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-// Ajout d'un marqueur bougeable pour Limoges
-let marqueur = L.marker([limoges.lat, limoges.lon], { draggable: false }).addTo(map);
+// Ajout d'un marqueur
+let marqueur = L.marker([adress.lat, adress.lon], { draggable: false }).addTo(map);
 
-// Création d'un popup pour Limoges
-marqueur.bindPopup("Vous êtes à Limoges").openPopup();
+// Création d'un popup
+marqueur.bindPopup("Clean up concept detailing").openPopup();

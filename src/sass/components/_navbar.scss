@@ -3,15 +3,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: #222;
     height: 50px;
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
-
+    
     @include respondTo(md) {
+        font-size: 0.85rem;
         position: inherit;
         height: inherit;
         display: block;
@@ -71,12 +72,6 @@
 
                 .navbarIcons {
                     width: 32px;
-
-                    @include respondTo(md) {
-                        &:not(#returnIcon) {
-                            display: none;
-                        }
-                    }
                 }
             }
         }
