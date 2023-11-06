@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="/assets/font/font.css">
 
-    <!-- google font -->
+    <!-- favicon -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -112,19 +112,67 @@
         </div>
     </header>
     <main>
-        <section id="gallery">
+        <section id="priceGallery">
             <h1>prestations et tarifs</h1>
+
+            <div id="priceGridContainer">
+                <h2>Grille Tarifaire</h2>
+                <table>
+                    <tr class="tableElements">
+                        <th class="tableElements">prestation</th>
+                        <th class="tableElements">Prix</th>
+                    </tr>
+                    <tr class="tableElements">
+                        <td class="tableElements priceGridTitles">nettoyage intérieur</td>
+                        <td class="tableElements prices">60 €
+                            <a href="#prestation1" class="priceGridAnchor">description</a>
+                        </td>
+                    </tr>
+                    <tr class="tableElements">
+                        <td class="tableElements priceGridTitles">nettoyage extérieur</td>
+                        <td class="tableElements prices">30 €
+                            <a href="#prestation2" class="priceGridAnchor">description</a>
+                        </td>
+                    </tr>
+                    <tr class="tableElements">
+                        <td class="tableElements priceGridTitles">polissage standard</td>
+                        <td class="tableElements prices">150 €
+                            <a href="#prestation3" class="priceGridAnchor">description</a>
+                        </td>
+                    </tr>
+                    <tr class="tableElements">
+                        <td class="tableElements priceGridTitles">polissage premium</td>
+                        <td class="tableElements prices">275 €
+                            <a href="#prestation4" class="priceGridAnchor">description</a>
+                        </td>
+                    </tr>
+                    <tr class="tableElements">
+                        <td class="tableElements priceGridTitles">rénovation phares</td>
+                        <td class="tableElements prices">20 €
+                            <a href="#prestation5" class="priceGridAnchor">description</a>
+                        </td>
+                    </tr>
+                    <tr class="tableElements">
+                        <td class="tableElements priceGridTitles">nettoyage canapé / tapis / matelas</td>
+                        <td class="tableElements prices">80 €
+                            <a href="#prestation6" class="priceGridAnchor">description</a>
+                        </td>
+                    </tr>
+                  </table>
+                  
+            </div>
+
             <div id="galleryMainContainer">
     
                 <!-- prestation 1 -->
     
                 <div class="prestationGalleryMainsContainers right" id="prestation1">
-                    <h2 class="prestationGalleryTitles">nettoyage intérrieur/exterrieur</h2>
+                    <h2 class="prestationGalleryTitles">nettoyage intérieur</h2>
                     <div class="prestationGalleryContainers">
-                        <img src="/assets/img/img1.jpeg" alt="Photo de la prestation n°" class="prestationGalleryItems prestationGalleryImgs">
-                        <div class="prestationGalleryCtaDescriptionContainer">
-                            <p class="prestationGalleryItems prestationGalleryDescriptions">Lorem ipsum <strong>dolor</strong> sit amet <strong>consectetur</strong> adipisicing elit. <strong>Consequatur</strong>, a.</p>
-                            <p class="tarifs">50€</p>
+                        <img src="/assets/img/img13.jpeg" alt="Photo de la prestation n°1" class="prestationGalleryImgs">
+                        <div class="prestationGalleryDescriptionContainers">
+                            <p class="prestationGalleryDescriptions">Offrez à votre véhicule un <strong>nettoyage</strong> intérieur <strong>complet</strong>, comprenant un soin au pinceau pour <strong>rénover</strong> les plastiques, un passage d'aspirateur <strong>méticuleux</strong> et un nettoyage des vitres.</p>
+                            <p class="conditions">* Pour le pressing des sièges, un ajustement tarifaire de 5 euro par siège sera facturé. Cependant, veuillez noter que, en cas de dommages liés à la présence de poils d'animaux, de peinture ou tout autre incident similaire, des frais additionnels pourraient être nécessaires pour maintenir la <strong>qualité</strong> de notre service.</p>
                         </div>
                     </div>
                 </div>
@@ -132,12 +180,11 @@
                 <!-- prestation 2 -->
     
                 <div class="prestationGalleryMainsContainers left" id="prestation2">
-                    <h2 class="prestationGalleryTitles">polissage/lustrage</h2>
+                    <h2 class="prestationGalleryTitles">nettoyage extérieur</h2>
                     <div class="prestationGalleryContainers">
-                        <img src="/assets/img/img13.jpeg" alt="Photo de la prestation n°" class="prestationGalleryItems prestationGalleryImgs">
-                        <div class="prestationGalleryCtaDescriptionContainer">
-                            <p class="prestationGalleryItems prestationGalleryDescriptions">Lorem ipsum <strong>dolor</strong> sit amet <strong>consectetur</strong> adipisicing elit. <strong>Consequatur</strong>, a.</p>
-                            <p class="tarifs">50€</p>
+                        <img src="/assets/img/img17.jpg" alt="Photo de la prestation n°2" class="prestationGalleryImgs">
+                        <div class="prestationGalleryDescriptionContainers">
+                            <p class="prestationGalleryDescriptions">Offrez à votre véhicule un <strong>rafraîchissement</strong> extérieur <strong>complet</strong>, incluant un <strong>décontaminant</strong> chimique sur l'ensemble de la carrosserie, un <strong>nettoyage haute pression</strong>, l'<strong>entretien</strong> des jantes et pare-boue, ainsi que l'entrée des portes. La <strong>cire</strong> et le <strong>traitement céramique</strong> sont disponibles en option pour <strong>sublimer</strong> davantage votre véhicule.</p>
                         </div>
                     </div>
                 </div>
@@ -145,12 +192,12 @@
                 <!-- prestation 3 -->
     
                 <div class="prestationGalleryMainsContainers right" id="prestation3">
-                    <h2 class="prestationGalleryTitles">traitement cire/céramique</h2>
+                    <h2 class="prestationGalleryTitles">polissage standard</h2>
                     <div class="prestationGalleryContainers">
-                        <img src="/assets/img/img2.jpeg" alt="Photo de la prestation n°" class="prestationGalleryItems prestationGalleryImgs">
-                        <div class="prestationGalleryCtaDescriptionContainer">
-                            <p class="prestationGalleryItems prestationGalleryDescriptions">Lorem ipsum <strong>dolor</strong> sit amet <strong>consectetur</strong> adipisicing elit. <strong>Consequatur</strong>, a.</p>
-                            <p class="tarifs">50€</p>
+                        <img src="/assets/img/img2.jpeg" alt="Photo de la prestation n°3" class="prestationGalleryImgs">
+                        <div class="prestationGalleryDescriptionContainers">
+                            <p class="prestationGalleryDescriptions">Découvrez notre <strong>polissage standard</strong> comprenant un <strong>lavage</strong> extérieur, une <strong>décontamination chimique</strong>  et <strong>mécanique</strong>, un polissage capable d'effacer <strong>jusqu'à 70% des micro-rayures</strong>, tout en ravivant la <strong>brillance</strong>, et l'application d'une cire offrant une durabilité de <strong>4 à 6 mois</strong>.</p>
+                            <span class="conditions">* Les prix peuvent varier en fonction du type de véhicule, tels que Viano, van, utilitaire, etc</span>
                         </div>
                     </div>
                 </div>
@@ -158,25 +205,49 @@
                 <!-- prestation 4 -->
     
                 <div class="prestationGalleryMainsContainers left" id="prestation4">
-                    <h2 class="prestationGalleryTitles">rénove phares</h2>
+                    <h2 class="prestationGalleryTitles">polissage premium</h2>
                     <div class="prestationGalleryContainers">
-                        <img src="/assets/img/img4.jpg" alt="Photo de la prestation n°" class="prestationGalleryItems prestationGalleryImgs">
-                        <div class="prestationGalleryCtaDescriptionContainer">
-                            <p class="prestationGalleryItems prestationGalleryDescriptions">Lorem ipsum <strong>dolor</strong> sit amet <strong>consectetur</strong> adipisicing elit. <strong>Consequatur</strong>, a.</p>
-                            <p class="tarifs">50€</p>
+                        <img src="/assets/img/img20.jpg" alt="Photo de la prestation n°4" class="prestationGalleryImgs">
+                        <div class="prestationGalleryDescriptionContainers">
+                            <p class="prestationGalleryDescriptions">Choisissez notre <strong>polissage premium</strong>, incluant un <strong>lavage</strong> extérieur, une <strong>décontamination chimique</strong>  et <strong>mécanique</strong>, un <strong>polissage expert</strong> capable d'effacer <strong>entre 70% et 80% des micro-rayures</strong> , couronné par un traitement <strong>céramique</strong> offrant une <strong>protection durable</strong> de <strong>1 à 2 ans</strong> et un remarquable effet déperlant. Offrez à votre véhicule une seconde jeunesse et une <strong>protection à long terme</strong>.</p>
+                            <span class="conditions">* Les prix peuvent varier en fonction du type de véhicule, tels que Viano, van, utilitaire, etc</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- prestation 5 -->
     
-                <div class="prestationGalleryMainsContainers right" id="prestation4">
+                <div class="prestationGalleryMainsContainers right" id="prestation5">
+                    <h2 class="prestationGalleryTitles">rénovation phares</h2>
+                    <div class="prestationGalleryContainers">
+                        <img src="/assets/img/img4.jpg" alt="Photo de la prestation n°5" class="prestationGalleryImgs">
+                        <div class="prestationGalleryDescriptionContainers">
+                            <p class="prestationGalleryDescriptions"><strong>Optimisez</strong> la visibilité de nuit et assurez le passage au <strong>contrôle technique</strong> en toute confiance avec notre service de <strong>rénovation</strong> des phares. Améliorez votre <strong>sécurité</strong> sur la route et redécouvrez la clarté de vos phares pour des trajets nocturnes <strong>plus sûres</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- prestation 6 -->
+    
+                <div class="prestationGalleryMainsContainers left" id="prestation6">
                     <h2 class="prestationGalleryTitles">nettoyage canapé / tapis / matelas</h2>
                     <div class="prestationGalleryContainers">
-                        <img src="/assets/img/img4.jpg" alt="Photo de la prestation n°" class="prestationGalleryItems prestationGalleryImgs">
-                        <div class="prestationGalleryCtaDescriptionContainer">
-                            <p class="prestationGalleryItems prestationGalleryDescriptions">Lorem ipsum <strong>dolor</strong> sit amet <strong>consectetur</strong> adipisicing elit. <strong>Consequatur</strong>, a.</p>
-                            <p class="tarifs">50€</p>
+                        <img src="/assets/img/img22.jpg" alt="Photo de la prestation n°6" class="prestationGalleryImgs">
+                        <div class="prestationGalleryDescriptionContainers">
+                            <p class="prestationGalleryDescriptions"><strong>Préservez</strong> ces précieux éléments de votre intérieur, évitez le gaspillage en leur offrant une <strong>seconde vie</strong>. Rendez à votre intérieur son <strong>éclat d'origine</strong>. Ne laissez plus la qualité se ternir. Choisissez la <strong>durabilité et la propreté</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- prestation 7 -->
+    
+                <div class="prestationGalleryMainsContainers right" id="prestation7">
+                    <h2 class="prestationGalleryTitles">detailing complet devis !</h2>
+                    <div class="prestationGalleryContainers">
+                        <img src="/assets/img/logo.png" alt="Photo de la prestation n°7" class="prestationGalleryImgs">
+                        <div class="prestationGalleryDescriptionContainers">
+                            <p class="prestationGalleryDescriptions">Le "<strong>detailing complet</strong>" est un processus de <strong>nettoyage</strong> et de <strong>restauration</strong> approfondi d'un véhicule, visant à remettre en état son aspect <strong>esthétique</strong> intérieur et extérieur. Il comprend généralement le <strong>lavage</strong>, le <strong>polissage</strong>, la <strong>décontamination</strong>, le traitement de la <strong>carrosserie</strong>, le nettoyage des <strong>jantes</strong>, le <strong>soin des plastiques</strong>, le nettoyage des <strong>sièges</strong>, le traitement des <strong>tapis</strong>, et d'autres services spécifiques pour <strong>améliorer</strong> l'apparence et la <strong>protection</strong> du véhicule. Ce processus vise à redonner au véhicule son <strong>aspect d'origine</strong> et à le maintenir en <strong>excellent état esthétique</strong>.</p>
+                            <p class="tarifs">Devis uniquement</p>
                         </div>
                     </div>
                 </div>
@@ -187,20 +258,21 @@
         <div id="footerMainContainer">
             <div id="footerBioContainer">
                 <p id="footerName">Clean up concept detailing</p>
-                <p id="footerBio">Esthetique automobile, nettoyage, lustrage, polissage,     protection cire céramique</p>
+                <p id="footerBio">Esthetique automobile, nettoyage, lustrage, polissage, protection cire céramique</p>
+                <p id="siret">N° Siret : 844 496 554 000 24</p>
             </div>
             <div id="footerSocialContainer">
                 <h2>social</h2>
                 <ul>
                     <li>
-                        <a href="https://www.tiktok.com/@cleanupconcept" target="_blank" title="Cliquez pour acceder à mon profil Tiktok" rel="noreferrer"><img src="/assets/img/tiktok.png" alt="Icone de Linkedin"></a>
+                        <a href="https://www.tiktok.com/@cleanupconcept" target="_blank" title="Cliquez pour acceder à mon profil Tiktok" rel="noreferrer"><img src="/assets/img/tiktok.svg" alt="Icone de Tiktok"></a>
                         
                     </li>
                     <li>
-                        <a href="https://instagram.com/cleanupconcepts?igshid=NjIwNzIyMDk2Mg==" target="_blank" title="Cliquez pour acceder à mon profil Instagram" rel="noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt="Icone de Instagram"></a>
+                        <a href="https://instagram.com/cleanupconcepts?igshid=NjIwNzIyMDk2Mg==" target="_blank" title="Cliquez pour acceder à mon profil Instagram" rel="noreferrer"><img src="/assets/img/insta.svg" alt="Icone de Instagram"></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/profile.php?id=100095238857421" target="_blank" title="Cliquez pour acceder à mon profil Facebook" rel="noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/3128/3128208.png" alt="Icone de Facebook"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100095238857421" target="_blank" title="Cliquez pour acceder à mon profil Facebook" rel="noreferrer"><img src="/assets/img/fb.svg" alt="Icone de Facebook"></a>
                     </li>
                 </ul>
             </div>
