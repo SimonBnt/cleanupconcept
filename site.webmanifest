@@ -1,6 +1,9 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Clean up concept detailing - Limoges, France",
+    "short_name": "Cleanupconceptdetailing",
+    "description" : "Bienvenue chez Clean up concept detailing, votre spécialiste du detailing automobile certifié à Limoges, en France.",
+    "start_url" : "https://cleanupconcept.fr",
+
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,6 +16,7 @@
             "type": "image/png"
         }
     ],
+    
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"

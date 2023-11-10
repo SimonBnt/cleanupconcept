@@ -4,18 +4,13 @@ footer {
     padding-bottom: 4rem;
     font-size: 0.85rem;
     
-    @include respondTo(lg) {
-        padding: 1rem 20rem;
-    }
-    
     #footerMainContainer {
         color: white;
         padding-bottom: 1rem;
         
-        @include respondTo(lg) {
+        @include respondTo(md) {
             display: flex;
             border-bottom: solid white 1px;
-            gap: 0 20rem;
             margin-bottom: 2rem;
             margin-bottom: 2rem;
         }
@@ -49,6 +44,11 @@ footer {
         }
 
         #footerSocialContainer {
+            @include respondTo(md) {
+                margin-left: auto;
+                margin-right: 15%;
+            }
+
             h2 {
                 text-transform: uppercase;
                 margin-bottom: 1.5rem;
@@ -61,12 +61,11 @@ footer {
                 gap: 0 2rem;
                 
                 li {
-                    
                     img {
                         border-radius: 0.25rem;
                         width: 24px;
-
-                        @include respondTo(lg) {
+                        
+                        @include respondTo(md) {
                             width: 32px;
                         }
                     }
@@ -78,7 +77,7 @@ footer {
     #propertyContainer {
         text-align: center;
 
-        @include respondTo(lg) {
+        @include respondTo(md) {
             margin-bottom: 2rem;
             color: #ffffff;
         }

@@ -1,0 +1,110 @@
+#priceGridContainer {
+    text-transform: uppercase;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        @include respondTo(md) {
+            font-size: 1.25rem;                
+        }
+    }
+
+    table {
+        margin: 0 auto;
+        border-collapse: separate;
+        border-radius: 10px;
+        border-spacing: 0.5rem;
+        font-size: 0.75rem;
+        margin-bottom: 2rem;
+        
+        @include respondTo(md) {
+            border-spacing: 1rem;
+            font-size: 1.25rem;                
+        }
+
+        .priceGridTitles {
+            font-size: .6rem;
+
+            @include respondTo(sm) {
+                font-size: 0.8rem;
+            }
+
+            @include respondTo(md) {
+                font-size: 1rem;
+            }
+        }
+
+        th {
+            font-size: 1rem;
+
+            @include respondTo(md) {
+                font-size: 1.1rem;
+            }
+        }
+
+        th, .prices {
+            color: #0671C4;
+        }
+
+        th, td {
+            background-color: #222;
+        } 
+
+        .prices {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            
+            @include respondTo(sm) {
+                flex-direction: row;
+            }
+
+            @include respondTo(md) {
+                font-size: 1.25rem;
+            }
+        }
+
+        .priceGridAnchor {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: #0671C4;
+            border-radius: 0.25rem;
+            padding: 0.25rem;
+            transition: 0.3s;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+            font-size: 0.5rem;
+            margin-top: 0.5rem;
+            
+            @include respondTo(sm) {
+                font-size: 0.75rem;
+                margin-left: 2rem;
+                padding: 0.5rem;
+                margin-top: 0;
+            }
+            
+            @include respondTo(md) {
+                font-size: 1rem;
+                padding: 0.75rem;
+                
+                &:hover {
+                    transition: 0.3s;
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    .tableElements {
+        border: solid white 2.5px;
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+        
+        @include respondTo(md) {
+            padding: 1rem;
+        }
+    }
+}

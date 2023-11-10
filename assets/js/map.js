@@ -15,4 +15,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let marqueur = L.marker([adress.lat, adress.lon], { draggable: false }).addTo(map);
 
 // Création d'un popup
-marqueur.bindPopup("Clean up concept detailing").openPopup();
+marqueur.bindPopup("Clean up concept").openPopup();

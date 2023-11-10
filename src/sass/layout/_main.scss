@@ -96,8 +96,8 @@ main {
                     
                     @include respondTo(md) {
                         display: block;
-                        bottom: -35%;
-                        left: -10%;
+                        bottom: -190px;
+                        left: -120px;
                         position: absolute;
                         width: 512px;
                         opacity: 0.85;
@@ -124,13 +124,13 @@ main {
                         }
 
                         h2 {
-                            color: #0671C4;
+                            color: white;
                             font-size: 0.85rem;
                             text-transform: uppercase;
                             margin-bottom: 2rem;
 
                             strong {
-                                color: white;
+                                color: #0671C4;
                             }
                         }
 
@@ -244,51 +244,6 @@ main {
     
                     @include respondTo(md) {
                         font-size: 1.25rem;
-                    }
-                }
-            }
-    
-            #rightSidenavContainer {
-                display: none;
-    
-                @include respondTo(md) {
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    bottom: 35%;
-                    background-color: #222;
-                    padding: 2rem 0.5rem;
-                    border: solid black 2px;
-                    border-right: none;
-                    border-top-left-radius: 0.25rem;
-                    border-bottom-left-radius: 0.25rem;
-                }
-    
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2rem 0;
-    
-                    li {
-                        img {
-                            width: 24px;
-                            transition: 0.3s;
-    
-                            @include respondTo(md) {
-                                cursor: pointer;
-                                width: 36px;
-                        
-                                &:hover {
-                                    transition: 0.3s;
-                                    transform: translateY(-2px);
-                                }
-                        
-                                &:active {
-                                    transform: translateY(3px);
-                                    transform: translateX(3px);
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -489,7 +444,9 @@ main {
                     
                     @include respondTo(md) {
                         width: 350px;
-                        height: 350px;
+                        height: 400px;
+                        max-height: 400px;
+
 
                         &:hover {
                             opacity: 1;
@@ -579,6 +536,18 @@ main {
 
                             @media screen and (min-width: 0px) and (max-width: 359px) {
                                 width: 24px;
+                            }
+
+                        }
+
+                        #mailMe {
+                            color: white;
+                            text-decoration: none;
+
+                            @include respondTo(md) {
+                                &:hover {
+                                    color: #0671C4;
+                                }
                             }
                         }
                     }
